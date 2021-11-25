@@ -1,0 +1,38 @@
+<!-- by default height of row is equal to width of column -->
+<mat-grid-list cols='3'>
+    <mat-grid-tile rowspan="2">Tile 1</mat-grid-tile>
+    <mat-grid-tile >Tile 2</mat-grid-tile>
+    <mat-grid-tile>Tile 3</mat-grid-tile>
+    <mat-grid-tile colspan="2">Tile 4</mat-grid-tile>
+    <mat-grid-tile>Tile 5</mat-grid-tile>
+    <mat-grid-tile>Tile 6</mat-grid-tile>
+    <mat-grid-tile>Tile 7</mat-grid-tile>
+</mat-grid-list>
+<br/>
+<mat-grid-list cols='3' rowHeight="100px">
+    <mat-grid-tile rowspan="2">Tile 1</mat-grid-tile>
+    <mat-grid-tile >Tile 2</mat-grid-tile>
+    <mat-grid-tile>Tile 3</mat-grid-tile>
+    <mat-grid-tile >Tile 4</mat-grid-tile>
+    <mat-grid-tile>Tile 5</mat-grid-tile>
+    
+</mat-grid-list>
+<br/>
+<mat-grid-list cols='3' rowHeight="2:1">
+    <mat-grid-tile >Tile 1</mat-grid-tile>
+    <mat-grid-tile >Tile 2</mat-grid-tile>
+    <mat-grid-tile>Tile 3</mat-grid-tile>
+    
+</mat-grid-list>
+<br/>
+<mat-grid-list cols='3' rowHeight="fit" style="height: 200px;" gutterSize="10px">
+    <mat-grid-tile >Tile 1</mat-grid-tile>
+    <mat-grid-tile >Tile 2</mat-grid-tile>
+    <mat-grid-tile>Tile 3</mat-grid-tile>
+    <mat-grid-tile >Tile 4</mat-grid-tile>
+    <mat-grid-tile >Tile 5</mat-grid-tile>
+    <mat-grid-tile>Tile 6</mat-grid-tile>
+    
+</mat-grid-list>
+
+

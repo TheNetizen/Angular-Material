@@ -1,0 +1,36 @@
+<!-- //assign ref variable with value matMenu 
+xPosition can be before after yPosition can be above below -->
+<mat-menu #appMenu="matMenu" xPosition="before" yPosition="below">
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">Front end</button>
+  <button mat-menu-item>Back end</button>
+</mat-menu>
+<button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>Vue</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
+      <button mat-menu-item>settings</button>
+      <button mat-menu-item>logOut {{ name }}</button>
+      <button mat-menu-item>hobby {{hobby}}</button>
+    </ng-template>
+  </mat-menu>
+  <button
+    mat-flat-button
+    [matMenuTriggerData]="{name:'miniHarshita' ,hobby:'meloDrama'}"
+    [matMenuTriggerFor]="lazyMenu"
+  >
+    LazyMenu
+  </button>
+  <button
+    mat-flat-button
+    [matMenuTriggerData]="{ name: 'Harshita', hobby: 'painting' }"
+    [matMenuTriggerFor]="lazyMenu"
+  >
+    LazyMenu2
+  </button>
+  

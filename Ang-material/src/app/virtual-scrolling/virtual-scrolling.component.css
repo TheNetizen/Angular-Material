@@ -1,0 +1,8 @@
+.number{
+    height: 100px;
+    text-align: center;
+    border: grey 2px solid;
+}
+.container{
+    height:500px;
+}

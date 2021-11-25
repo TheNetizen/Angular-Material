@@ -1,0 +1,7 @@
+
+<cdk-virtual-scroll-viewport itemSize="100" class="container">
+    <table  >
+        <tr ><th>Numbers</th></tr>
+        <tr  *cdkVirtualFor="let i of b" class="number" ><td>{{i}}</td></tr>
+    </table>
+</cdk-virtual-scroll-viewport>

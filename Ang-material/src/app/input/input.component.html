@@ -1,0 +1,68 @@
+<div>
+    <mat-form-field floatLabel="auto">
+        <mat-label>Name</mat-label>
+        <input matInput type="text">
+    </mat-form-field>
+    <br/>
+    <mat-form-field floatLabel="always">
+        <mat-label >Name</mat-label>
+        <input matInput type="text">
+    </mat-form-field>
+    <br/>
+    <mat-form-field floatLabel="never">
+        <mat-label>Name</mat-label>
+        <input matInput type="text">
+    </mat-form-field>
+    <br/>
+    <mat-form-field >
+        <mat-label>Name</mat-label>
+        <input matInput type="text" required>
+    </mat-form-field>
+    <br/>
+    <mat-form-field hideRequiredMarker>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" required>
+        <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" required>
+        <mat-hint>Min 5 characters</mat-hint>
+    </mat-form-field>
+    
+</div>
+
+<div>
+    <mat-form-field>
+        <mat-label>Topic</mat-label>
+        <mat-select [(value)]="selectedValue" multiple>
+            <mat-option>None</mat-option>
+            <mat-option value="angular">Angular</mat-option>
+            <mat-option value="react">React</mat-option>
+            <mat-option value="vue">Vue</mat-option>
+        </mat-select>
+    </mat-form-field>
+    {{selectedValue}}
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>Topic</mat-label>
+        <mat-select [(value)]="selectedValue">
+            <mat-optgroup label="web">
+                <mat-option>None</mat-option>
+                <mat-option value="angular">Angular</mat-option>
+                <mat-option value="react">React</mat-option>
+                <mat-option value="vue">Vue</mat-option>
+            </mat-optgroup>
+            <mat-optgroup label="Mobile">
+                <mat-option>None</mat-option>
+            <mat-option value="angular">Angular</mat-option>
+            <mat-option value="react">React</mat-option>
+            <mat-option value="vue">Vue</mat-option>
+            </mat-optgroup>
+            
+        </mat-select>
+    </mat-form-field>
+    {{selectedValue}}
+</div>

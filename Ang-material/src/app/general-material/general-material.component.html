@@ -1,0 +1,102 @@
+// Typography.......
+
+<div class="mat-display-4">Hello</div>
+<div class="mat-display-3">Hello</div>
+<div class="mat-display-2">Hello</div>
+<div class="mat-display-1">Hello</div>
+
+<div class="mat-headline">Hello-headline</div>
+<div class="mat-subheading-1">Hello-subheading-1</div>
+<div class="mat-subheading-2">Hello-subheading-2</div>
+<div class="mat-title">Hello-title</div>
+
+<div class="mat-caption">I am Harshita-caption</div>
+<div class="mat-body-1">I am Harshita-body-1</div>
+<div class="mat-body-2">I am Harshita-body-2</div>
+
+<div class="mat-typography">
+  <h1 >Hello h1</h1>
+  <h2 >Hello h2</h2>
+  <h3 >Hello h3</h3>
+  <h4 >Hello h4</h4>
+</div>
+
+//Buttons......
+<div>
+<button mat-button>Submit</button>
+<button mat-raised-button>Submit-raised</button>
+<button mat-flat-button>Submit-flat</button>
+<button mat-stroked-button>Submit-stroked</button>
+</div>
+
+<div>
+  <button mat-icon-button>Submit-icon</button>
+  <button mat-fab>Submit-fab</button>
+  <button mat-mini-fab>Submit-mini-fab</button>
+</div>
+
+<div>
+  <button  color="primary" mat-button>Submit</button>
+  <button color="accent" mat-button>Submit</button>
+  <button color="warn" mat-button>Submit</button>
+
+  <button color="primary" mat-raised-button>Submit-raised</button>
+  <button color="accent" mat-raised-button>Submit-raised</button>
+  <button color="warn" mat-raised-button>Submit-raised</button>
+</div>
+
+//Button-toggle.....
+<div>
+  <mat-button-toggle #togglebtn disableRipple checked disabled>Toggle</mat-button-toggle>
+  {{togglebtn.checked }}
+</div>
+
+<div>
+  <mat-button-toggle-group #togglegroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{togglegroup.value}}
+</div>
+<!-- adding multiple makes it behave as checkbox(default behavior is of radio button) -->
+<div>
+  <mat-button-toggle-group #togglegroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{togglegroup.value}}
+</div>
+
+<div >
+  <span class="badge"  [matBadge]="notifications" matBadgePosition="below before" [matBadgeHidden]="notifications===0">Notification</span>
+  <span class="badge" matBadge="5" matBadgePosition="below after">Notification</span>
+  <span class="badge" matBadge="5" matBadgePosition="above before">Notification</span>
+  <span class="badge" matBadge="5" matBadgePosition="above after">Notification</span>
+  <span class="badge" matBadge="5" matBadgeSize="small">Notification</span>
+  <span class="badge" matBadge="5" matBadgeSize="medium">Notification</span>
+  <span class="badge" matBadge="5" matBadgeSize="large">Notification</span>
+  <span class="badge" matBadge="5" matBadgeColor="primary">Notification</span>
+  <span class="badge" matBadge="5" matBadgeColor="accent">Notification</span>
+  <span class="badge" matBadge="5" matBadgeColor="warn">Notification</span>
+  <span class="badge" matBadge="5" matBadgeOverlap="false">Notification</span>
+</div>
+
+//Progress Spinner.....
+<mat-progress-spinner value="30"></mat-progress-spinner>
+<mat-spinner color="accent"></mat-spinner>
+<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+<br/>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+//Toolbar as Navbar......
+
+<mat-toolbar color="primary" class="navbar">
+  <div>Code Evolution</div>
+  <div>
+    <span>Home</span>
+    <span>About</span>
+    <span>Contact</span>
+  </div>
+</mat-toolbar>

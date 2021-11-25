@@ -1,0 +1,19 @@
+
+<!-- 1.only opened  <mat-sidenav color="primary" opened> will make side
+     nav appear only once and it goes away once clicked 
+    2.we can assign opened in banana in the box to handle sidenav using button
+    3.we can use mode such as over,push,side
+    4. we have methods like open close and toggle
+-->
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side"  [(opened)]="opened">
+        Good SideBar
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)='opened=!opened' >Toggle Sidenav</button>
+        <button (click)='sidenav.open()' >Open Sidenav</button>
+        <button (click)='sidenav.close()' >Close Sidenav</button>
+        <button (click)='sidenav.toggle()' >Toggle Sidenav</button>
+        Box Office
+    </mat-sidenav-content>
+</mat-sidenav-container>
